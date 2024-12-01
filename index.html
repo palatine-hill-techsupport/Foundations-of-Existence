@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foundations of Existence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aladin&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <style>
+    /* Reset and Global Styles */
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('index-back.png') no-repeat center center fixed; 
+      background-size: cover;
+      overflow: hidden;
+      color: #f0f0f0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      animation: background-drift 30s linear infinite; 
+    }
+
+    @keyframes background-drift {
+      0% {
+        background-position: 50% 50%;
+      }
+      50% {
+        background-position: 55% 55%; 
+      }
+      100% {
+        background-position: 50% 50%;
+      }
+    }
+
+    /* Text and Content */
+    h1, p {
+      position: relative;
+    }
+
+    h1 {
+      font-size: 6.5rem;
+      margin-bottom: 1.3rem;
+      text-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+      color: #ffffff; 
+      padding: 10px 15px;
+      border-radius: 8px;
+      font-family: "Aladin", system-ui;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+      max-width: 800px;
+      line-height: 1.6;
+      text-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
+      color: #f0f0f0;
+      background: rgba(30, 30, 30, 0.4); 
+      padding: 10px 15px;
+      border-radius: 8px;
+      font-family: "Roboto Mono", monospace;
+    }
+
+    /* Grid and Cards */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      width: 90%;
+      max-width: 1200px;
+    }
+
+    .card {
+      background: rgba(30, 30, 30, 0.4);
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.8), 0 4px 10px rgba(255, 255, 255, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.9), 0 4px 15px rgba(255, 255, 255, 0.3);
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .card h2 {
+      font-size: 2rem;
+      margin: 1rem 0;
+      font-family: "Roboto Mono", monospace;
+    }
+
+    .card a {
+      text-decoration: none;
+      color: #FFF;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .card a:hover {
+      color: #03a9f4;
+    }
+
+    .credit-box {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      font-size: 12px;
+      line-height: 1.4;
+      padding: 10px 15px;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      max-width: 300px;
+    }
+
+    .credit-box {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      font-size: 12px;
+      line-height: 1.4;
+      padding: 10px 15px;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      max-width: 300px;
+      opacity: 0.4; 
+      transition: opacity 0.3s ease; 
+      font-family: "Roboto Mono", monospace;
+    }
+
+    .credit-box:hover {
+      opacity: 1; 
+    }
+
+    .credit-box p {
+      margin: 5px 0;
+    }
+
+    .credit-box a {
+      color: #00bcd4;
+      text-decoration: none;
+    }
+
+    .credit-box a:hover {
+      color: #03a9f4;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Foundations of Existence</h1>
+  <p>
+    Explore the intricate journey through Matter, Energy, Space, and Consciousness. Each page brings to life the themes of density, flow, vastness, and depth through interactive designs and animations.
+  </p>
+
+  <div class="grid">
+
+    <!-- Energy Card -->
+    <div class="card">
+      <a href="energy.html">
+        <h2>Energy</h2>
+      </a>
+    </div>
+
+    <!-- Matter Card -->
+    <div class="card">
+      <a href="matter.html">
+        <h2>Matter</h2>
+      </a>
+    </div>
+
+    <!-- Space Card -->
+    <div class="card">
+      <a href="space.html">
+        <h2>Space</h2>
+      </a>
+    </div>
+
+    <!-- Consciousness Card -->
+    <div class="card">
+      <a href="consciousness.html">
+        <h2>Consciousness</h2>
+      </a>
+    </div>
+  </div>
+
+  <!-- Credit Box -->
+  <div class="credit-box">
+    Background image by NASA, ESA, CSA, and STScI. (2022). <i>Carina Nebula - NIRCam mosaic</i>. Retrieved from <a href="https://webbtelescope.org/contents/media/images/2022/031/01G77PKB8NKR7S8Z6HBXMYATGJ?Type=Observations&itemsPerPage=100&page=2&filterUUID=91dfa083-c258-4f9f-bef1-8f40c26f4c97" target="_blank">Webb Space Telescope</a>.
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consciousness</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aladin&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <style>
+    /* Reset */
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url('consciousness-back1.png') no-repeat center center fixed;
+      background-size: cover;
+      overflow: hidden;
+      font-family: "Roboto Mono", monospace;
+    }
+
+    .aladin-regular {
+      font-family: "Aladin", system-ui;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    // <uniquifier>: Use a unique and descriptive class name
+    // <weight>: Use a value from 100 to 700
+
+    .roboto-mono-<uniquifier> {
+      font-family: "Roboto Mono", monospace;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;
+    }
+
+    /* Central Consciousness Element */
+    .consciousness {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 500px;
+      height: 500px;
+      background-size: cover;
+      animation: consciousness-rotate 11s steps(10) infinite;
+      z-index: 10;
+    }
+
+    .consciousness-mirrored {
+      position: absolute;
+      top: 25%; 
+      left: 50%;
+      transform: translate(-50%, -50%) scaleY(-1); 
+      width: 500px;
+      height: 500px;
+      background-size: cover;
+      animation: consciousness-rotate-reverse 11s steps(10) infinite; 
+      z-index: 9;
+    }
+
+    /* Consciousness Animations */
+    @keyframes consciousness-rotate {
+      0% { background-image: url('consciousness1.png'); }
+      10% { background-image: url('consciousness2.png'); }
+      20% { background-image: url('consciousness3.png'); }
+      30% { background-image: url('consciousness4.png'); }
+      40% { background-image: url('consciousness5.png'); }
+      50% { background-image: url('consciousness6.png'); }
+      60% { background-image: url('consciousness7.png'); }
+      70% { background-image: url('consciousness8.png'); }
+      80% { background-image: url('consciousness9.png'); }
+      90% { background-image: url('consciousness10.png'); }
+      100% { background-image: url('consciousness1.png'); }
+    }
+
+    @keyframes consciousness-rotate-reverse {
+      0% { background-image: url('consciousness1.png'); }
+      10% { background-image: url('consciousness10.png'); }
+      20% { background-image: url('consciousness9.png'); }
+      30% { background-image: url('consciousness8.png'); }
+      40% { background-image: url('consciousness7.png'); }
+      50% { background-image: url('consciousness6.png'); }
+      60% { background-image: url('consciousness5.png'); }
+      70% { background-image: url('consciousness4.png'); }
+      80% { background-image: url('consciousness3.png'); }
+      90% { background-image: url('consciousness2.png'); }
+      100% { background-image: url('consciousness1.png'); }
+    }
+
+    /* Parallax Background Layers */
+    .parallax-layer1 {
+      position: absolute;
+      width: 120%;
+      height: 120%;
+      background: url('consciousness-back2.png') no-repeat center center;
+      background-size: cover;
+      animation: parallax1 20s linear infinite;
+      opacity: 0.6;
+      pointer-events: none;
+    }
+
+    .parallax-layer2 {
+      position: absolute;
+      width: 150%;
+      height: 150%;
+      background: url('consciousness-back3.png') no-repeat center center;
+      background-size: cover;
+      animation: parallax2 15s linear infinite;
+      opacity: 0.5;
+      pointer-events: none;
+    }
+
+    @keyframes parallax1 {
+      0% { transform: translate(0, 0); }
+      50% { transform: translate(-20px, -10px); }
+      100% { transform: translate(0, 0); }
+    }
+
+    @keyframes parallax2 {
+      0% { transform: translate(0, 0); }
+      50% { transform: translate(20px, 15px); }
+      100% { transform: translate(0, 0); }
+    }
+
+    .credit-box {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      font-size: 12px;
+      line-height: 1.4;
+      padding: 10px 15px;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      max-width: 300px;
+      opacity: 0.4; 
+      transition: opacity 0.3s ease; 
+    }
+
+    .credit-box:hover {
+      opacity: 1; 
+    }
+
+    .credit-box p {
+      margin: 5px 0;
+    }
+
+    .credit-box a {
+      color: #00bcd4;
+      text-decoration: none;
+    }
+
+    .credit-box a:hover {
+      color: #03a9f4;
+    }
+
+    /* Back to Index Button */
+    .back-to-index {
+      position: absolute;
+      bottom: 15px;
+      left: 15px;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-size: 11px;
+      font-family: Arial, sans-serif;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease, background 0.3s ease;
+    }
+
+    .back-to-index a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .back-to-index:hover {
+      transform: translateY(-3px);
+      background: rgba(255, 255, 255, 0.2);
+    }
+  </style>
+</head>
+<body>
+
+<div class="parallax-layer1"></div>
+<div class="parallax-layer2"></div>
+
+<!-- Central Consciousness Animations -->
+<div class="consciousness"></div>
+<div class="consciousness-mirrored"></div>
+
+<div class="credit-box">
+  <p><strong>Background images:</strong></p>
+  <p>
+    NASA, ESA, CSA, STScI, Webb ERO Production Team. (2022). 
+    <em>Stephan's Quintet</em>. Webb Space Telescope. 
+    <a href="https://webbtelescope.org/contents/media/images/2022/052/01GF423GBQSK6ANC89NTFJW8VM?Type=Observations&itemsPerPage=100&page=1&filterUUID=91dfa083-c258-4f9f-bef1-8f40c26f4c97" target="_blank">
+      View Source
+    </a>
+  </p>
+  <p>
+    NASA, ESA, CSA, STScI, Webb ERO Production Team. (2022). 
+    <em>Southern Ring Nebula - NIRCam and MIRI composite</em>. Webb Space Telescope. 
+    <a href="https://webbtelescope.org/contents/media/images/2022/053/01GFRYSFM89AFADVAA0W625BSB?Type=Observations&itemsPerPage=100&page=1&filterUUID=91dfa083-c258-4f9f-bef1-8f40c26f4c97" target="_blank">
+      View Source
+    </a>
+  </p>
+  <p>
+    NASA, ESA, CSA, STScI, Webb ERO Production Team. (2022). 
+    <em>Carina Nebula - Cosmic Cliffs</em>. Webb Space Telescope. 
+    <a href="https://webbtelescope.org/contents/media/images/01GK2KKTR81SGYF24YBGYG7TAP?Type=Observations&itemsPerPage=100&page=1&filterUUID=91dfa083-c258-4f9f-bef1-8f40c26f4c97" target="_blank">
+      View Source
+    </a>
+  </p>
+</div>
+
+<div class="back-to-index">
+  <a href="index.html" title="Back to Home">home</a>
+</div>
+
+</body>
+</html>
