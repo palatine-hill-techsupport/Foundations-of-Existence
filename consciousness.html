@@ -27,16 +27,6 @@
       font-style: normal;
     }
 
-    // <uniquifier>: Use a unique and descriptive class name
-    // <weight>: Use a value from 100 to 700
-
-    .roboto-mono-<uniquifier> {
-      font-family: "Roboto Mono", monospace;
-      font-optical-sizing: auto;
-      font-weight: <weight>;
-      font-style: normal;
-    }
-
     /* Central Consciousness Element */
     .consciousness {
       position: absolute;
@@ -181,6 +171,23 @@
     .back-to-index:hover {
       transform: translateY(-3px);
       background: rgba(255, 255, 255, 0.2);
+    }
+
+    @media (max-width: 768px) {
+      .consciousness, .consciousness-mirrored {
+        width: 300px;
+        height: 300px;
+      }
+
+      .credit-box {
+        font-size: 10px;
+        padding: 8px 10px;
+      }
+
+      .back-to-index {
+        font-size: 10px;
+        padding: 8px 10px;
+      }
     }
   </style>
 </head>
